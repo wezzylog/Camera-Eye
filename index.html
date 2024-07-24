@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye Tracking Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        #videoFeed {
+            width: 640px;
+            height: 480px;
+            background-color: #ddd;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Eye Tracking Display</h1>
+        <div id="videoFeed">
+            <!-- Video feed will be displayed here -->
+        </div>
+        <div>
+            <button id="startBtn">Start Tracking</button>
+            <button id="stopBtn">Stop Tracking</button>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript code for eye tracking functionality will go here
+        // This is where you'd integrate with your Python backend
+        document.getElementById('startBtn').addEventListener('click', function() {
+            console.log('Start tracking');
+            // Add code to start eye tracking
+        });
+
+        document.getElementById('stopBtn').addEventListener('click', function() {
+            console.log('Stop tracking');
+            // Add code to stop eye tracking
+        });
+    </script>
+</body>
+</html>
