@@ -2,6 +2,7 @@ from flask import Flask, send_file
 from flask_socketio import SocketIO, emit
 import cv2
 import base64
+import vector
 
 app = Flask(__name__)
 socketio = SocketIO(app)
